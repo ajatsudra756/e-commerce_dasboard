@@ -1,2 +1,10 @@
-# e-commerce_dasboard
-Dashboard performa bisnis E-Commerce tahun 2018. Dibuat dengan Streamlit, mencakup analisis tren penjualan, kategori produk terlaris, dan segmentasi loyalitas pelanggan (RFM).
+# How to Run E-Commerce Performance Dashboard
+## Setup Environtment - Anaconda
+'''bash
+conda create --name main-ds python-3.9
+conda activate main-ds
+pip install -r requirements.txt
+
+## Run streamlit app
+'''bash
+streamlit run dashboard.py
