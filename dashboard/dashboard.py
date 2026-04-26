@@ -10,7 +10,7 @@ st.set_page_config(page_title="E-Commerce Dashboard", layout="wide")
 # LOAD DATASET
 @st.cache_data
 def load_data():
-    df = pd.read_csv("main_dataset.csv") 
+    df = pd.read_csv("dashboard/main_dataset.csv") 
     df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
     df['total_revenue'] = df['price'] + df['freight_value']
     return df
