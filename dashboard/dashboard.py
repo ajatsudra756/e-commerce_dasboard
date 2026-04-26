@@ -51,9 +51,9 @@ try:
         
     with col4:
         # Rata-rata Produk per Order
-        # Menghitung total baris (item) dibagi total order unik
+        # Menghitung total baris (Unit) dibagi total order unik
         avg_items = len(main_df) / total_orders if total_orders > 0 else 0
-        st.metric("Rata-rata Penjualan Produk", f"{avg_items:.2f} Item")
+        st.metric("Rata-rata Penjualan Produk", f"{avg_items:.2f} Unit")
 
     # --- ROW 2: TREN PENDAPATAN & PENJUALAN ---
     # Judul Bagian Rata Kiri
